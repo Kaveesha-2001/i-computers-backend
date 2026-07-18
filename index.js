@@ -18,7 +18,9 @@ mongoose.connect(mongodbURI).then(
     ()=>{
         console.log("Connected to MongoDB");
     }
-)
+).catch((err) => {
+        console.error("Database connection error:", err);
+    });
 app.use(cors())
 
 app.use( express.json() )

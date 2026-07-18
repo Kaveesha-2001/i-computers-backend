@@ -112,7 +112,7 @@ export async function updateProduct(req,res){
             model : req.body.model,
             category : req.body.category,
             stock : req.body.stock,
-            isAvailble : req.body.isAvailble
+            isAvailable : req.body.isAvailable
         })
 
         res.json({

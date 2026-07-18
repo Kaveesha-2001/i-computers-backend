@@ -147,7 +147,7 @@ export async function updateUserData(req,res){
                 process.env.JWT_SECRET,
                 { expiresIn : "48h" }
             )
-
+ 
             res.json({
                 message : "User data updated successfully",
                 token : token
